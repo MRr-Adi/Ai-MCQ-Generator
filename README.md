@@ -40,3 +40,51 @@ Open your terminal or Command Prompt inside the project folder.
 This keeps the projectHere is the entire README file in a single block. You can just click the small "Copy" button in the top right corner of this box, and then paste it directly into tools separate from your main computer. Run this command:
 ```bash
 python -m venv venv
+4. Activate the Virtual Environment
+
+On Windows:
+
+Bash
+  venv\Scripts\activate
+On Mac/Linux:
+
+Bash
+  source venv/bin```markdown
+# 📚 Automated Study Buddy Quiz Generator
+
+An AI-powered web application that acts as your personal study assistant. Simply paste a link to an educational article or Wikipedia page, and the app will instantly read the text and generate an interactive multiple-choice quiz to test your knowledge!/activate
+5. Install the Required Libraries
+Once the environment is active (you will see (venv) in your terminal), install the tools by running:
+
+Bash
+pip install streamlit google-generativeai beautifulsoup4 requests
+6. Add Your API Key
+Open the app.py file. Look for line 10:
+
+Python
+genai.configure(api_key="PASTE_YOUR_KEY_HERE")
+Replace "PASTE_YOUR_KEY_HERE" with your actual Google Gemini API key. (Do not share this key publicly!)
+
+🏃‍♂️ Running the Application
+To start the app, run this exact command in your terminal:
+
+Bash
+streamlit run app.py
+A new tab will automatically open in your default web browser (usually at http://localhost:8501).
+
+How to Use It:
+Copy a link to a text-heavy website (like a Wikipedia article).
+
+Paste the URL into the text box on the app.
+
+Click Generate Quiz.
+
+Wait a few seconds for the AI to read the page and generate your custom multiple-choice questions!
+
+👨‍💻 Author
+Built with ❤️ for my MCA Semester 4 Major Project.
+
+**3. Create a Virtual Environment (Recommended)**
+This keeps the projectHere is the entire README file in a single block. You can just click the small "Copy" button in the top right corner of this box, and then paste it directly into tools separate from your main computer. Run this command:
+```bash
+python -m venv venv
